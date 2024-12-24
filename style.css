@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 3.5rem;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    font-family: "Roboto", serif;
+    overflow: auto;
+    color: gold;
+    background-color: rgb(43, 42, 42);
+}
+
+#header{
+    color: white;
+    background-color: rgb(43, 42, 42);
+}
+
+#header .head-details{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#header .head-details .name{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.head-details .logo img{
+    width: 70px;
+    border-radius: 50%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgb(43, 42, 42);
+    color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.menu{
+    display: flex;
+    gap: 2rem;
+}
+
+.nav ul li{
+    list-style: none;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.nav ul li a:hover{
+    color: gold;
+    cursor: pointer;
+}
+
+/* hamburger css */
+.hamburger {
+    right: 0;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+  
+.hamburger .line {
+    height: 3px;
+    background-color: white;
+    border-radius: 2px solid green;
+}
+
+.welcome{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+}
+
+#element{
+    color: gold;
+}
+
+.main-content{
+    padding: 1rem 2rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.heading{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-family: "Ubuntu", serif;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    color: rgb(215, 209, 209);
+}
+
+.services-content p{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.clients div p{
+    padding: 1rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.side-1{
+    margin-left: 1.5rem;
+}
+
+.side-2{
+    margin-left: 2.5rem;
+}
+
+#footer{
+    display: flex;
+    color: black;
+    background-color: rgb(215, 209, 209);
+    padding: 1.5rem 0;
+    justify-content: space-around;  
+    padding-top: 2rem;
+}
+
+.social-media a img{
+    width: 30px;
+    border-radius: 6px;
+}
+
+#company{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#company div p{
+    padding-top: 0.5rem;
+}
+
+#connect{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#connect .contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#connect .social-media{
+    display: flex;
+    gap: 2rem;   
+}
+
+#connect div p{
+    padding-top: 0.5rem;
+}
+
+#map{
+    align-self: center;
+}
+
+#about, #objectives, #visions, #missions, #services, #clients{
+    border: 2px solid green solid gold;
+}
+
+#parallax-1{
+    background-image: url("./public/Parallax.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 15% 0;
+    opacity: 0.9;
+}
+
+#parallax-2{
+    background-image: url("./public/about.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+#parallax-3{
+    background-image: url("./public/objectives.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+#parallax-4{
+    background-image: url("./public/services.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    opacity: 0.9;
+}
+
+/* media query */
+
+@media only screen and (max-width: 768px){
+
+    
+    /* hamburger css */
+    .hamburger {
+        display: flex;
+    }
+    
+    .menu {
+        display: none;
+        flex-direction: column; 
+        background-color: rgb(43, 42, 42);
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 50%;
+        padding: 1rem;
+    }
+    
+    .menu.open {
+        display: flex;
+    }
+    
+    .menu li {
+        margin: 0.5rem 0;
+    }
+    
+    #header .head-details .name{
+        font-size: 1.5rem;
+    }
+
+    .office-address{
+        font-size: 0.8rem
+    }
+
+    #footer{
+        flex-direction: column;
+        padding: 1.5rem 1rem;
+        gap: 3rem;
+    }
+
+    #footer p{
+        font-size: 0.8rem;
+    }
+
+    #footer h1{
+        font-size: 1.5rem;
+    }
+
+    #map{
+        align-self: flex-start;
+    }
+
+    .heading{
+        font-size: 1.5rem;
+    }
+
+    .main-content{
+        line-height: 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    .services-content p{
+        font-size: 0.8rem;
+    }
+    
+    .clients div p{
+        line-height: 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    .welcome{
+        flex-direction: column;
+        font-size: 1.3rem;
+        align-items: center;
+        margin-top: -15rem;
+    }
+
+    #parallax-1{
+        background-position:center;
+        align-items: center;
+    }
+    
+    #parallax-2{
+        background-position: center;
+    }
+
+    #parallax-3{
+        background-position: center;
+    }
+
+    #parallax-4{
+        background-position: center;
+    }
+}
